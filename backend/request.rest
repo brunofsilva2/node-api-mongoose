@@ -1,0 +1,125 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Algum serviço",
+    "description": "Alguma descrição",
+    "price": 120,
+    "image": "https://media.istockphoto.com/id/501387734/pt/foto/dan%C3%A7ar-seus-amigos.jpg?s=612x612&w=0&k=20&c=aHB1gZ5Qm6Glsl0n4RGR4oI8r_nxe5QI06TYlw9ifdg="
+}
+
+###
+
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/66ce9a91ceb8296937e73513
+
+###
+DELETE http://localhost:3000/api/services/66d17d2ec68c66c340e1fa7b
+
+###
+PUT http://localhost:3000/api/services/66ce9a91ceb8296937e73513
+Content-Type: application/json
+
+{
+    "name": "Nenhum título, mas algum.",
+    "description": "Nenhuma descrição, mas alguma.",
+    "price": 120,
+    "image": "https://media.istockphoto.com/id/501387734/pt/foto/dan%C3%A7ar-seus-amigos.jpg?s=612x612&w=0&k=20&c=aHB1gZ5Qm6Glsl0n4RGR4oI8r_nxe5QI06TYlw9ifdg="
+}
+
+###
+POST http://localhost:3000/api/parties/
+Content-Type: application/json
+
+{
+    "title": "Meu evento",
+    "author": "Bruno",
+    "description": "Festa de aniversário",
+    "budget": 20000,
+    "image": "https://img.freepik.com/fotos-gratis/publico-animado-assistindo-fogos-de-artificio-de-confete-e-se-divertindo-no-festival-de-musica-a-noite-copiar-espaco_637285-559.jpg?w=1380&t=st=1725006816~exp=1725007416~hmac=7d91dfc19143b5244019e7829fb0ac253d7f120b39a5b3508625265519723197",
+    "services": [
+        {
+            "name": "Algum serviço 1",
+            "description": "Alguma descrição",
+            "price": 1400,
+            "image": "https://media.istockphoto.com/id/501387734/pt/foto/dan%C3%A7ar-seus-amigos.jpg?s=612x612&w=0&k=20&c=aHB1gZ5Qm6Glsl0n4RGR4oI8r_nxe5QI06TYlw9ifdg="
+        },
+        {
+            "name": "Algum serviço 2",
+            "description": "Alguma descrição",
+            "price": 120,
+            "image": "https://media.istockphoto.com/id/501387734/pt/foto/dan%C3%A7ar-seus-amigos.jpg?s=612x612&w=0&k=20&c=aHB1gZ5Qm6Glsl0n4RGR4oI8r_nxe5QI06TYlw9ifdg="
+        },
+        {
+            "name": "Algum serviço 3",
+            "description": "Alguma descrição",
+            "price": 250,
+            "image": "https://media.istockphoto.com/id/501387734/pt/foto/dan%C3%A7ar-seus-amigos.jpg?s=612x612&w=0&k=20&c=aHB1gZ5Qm6Glsl0n4RGR4oI8r_nxe5QI06TYlw9ifdg="
+        },
+        {
+            "name": "Algum serviço 4",
+            "description": "Alguma descrição",
+            "price": 5741,
+            "image": "https://media.istockphoto.com/id/501387734/pt/foto/dan%C3%A7ar-seus-amigos.jpg?s=612x612&w=0&k=20&c=aHB1gZ5Qm6Glsl0n4RGR4oI8r_nxe5QI06TYlw9ifdg="
+        },{
+            "name": "Algum serviço 5",
+            "description": "Alguma descrição",
+            "price": 9000,
+            "image": "https://media.istockphoto.com/id/501387734/pt/foto/dan%C3%A7ar-seus-amigos.jpg?s=612x612&w=0&k=20&c=aHB1gZ5Qm6Glsl0n4RGR4oI8r_nxe5QI06TYlw9ifdg="
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/66d186384eb3b82a2bc6d142
+
+###
+DELETE http://localhost:3000/api/parties/66d1872d4eb3b82a2bc6d144
+
+###
+PUT http://localhost:3000/api/parties/66d18c9af99e68485e7c42dGAS
+Content-Type: application/json
+
+{
+    "title": "Meu evento",
+    "author": "Bruno",
+    "description": "Festa de aniversário",
+    "budget": 220000,
+    "image": "https://img.freepik.com/fotos-gratis/publico-animado-assistindo-fogos-de-artificio-de-confete-e-se-divertindo-no-festival-de-musica-a-noite-copiar-espaco_637285-559.jpg?w=1380&t=st=1725006816~exp=1725007416~hmac=7d91dfc19143b5244019e7829fb0ac253d7f120b39a5b3508625265519723197",
+    "services": [
+        {
+            "name": "Algum serviço 1",
+            "description": "Alguma descrição",
+            "price": 1400,
+            "image": "https://media.istockphoto.com/id/501387734/pt/foto/dan%C3%A7ar-seus-amigos.jpg?s=612x612&w=0&k=20&c=aHB1gZ5Qm6Glsl0n4RGR4oI8r_nxe5QI06TYlw9ifdg="
+        },
+        {
+            "name": "Algum serviço 2",
+            "description": "Alguma descrição",
+            "price": 120,
+            "image": "https://media.istockphoto.com/id/501387734/pt/foto/dan%C3%A7ar-seus-amigos.jpg?s=612x612&w=0&k=20&c=aHB1gZ5Qm6Glsl0n4RGR4oI8r_nxe5QI06TYlw9ifdg="
+        },
+        {
+            "name": "Algum serviço 3",
+            "description": "Alguma descrição",
+            "price": 250,
+            "image": "https://media.istockphoto.com/id/501387734/pt/foto/dan%C3%A7ar-seus-amigos.jpg?s=612x612&w=0&k=20&c=aHB1gZ5Qm6Glsl0n4RGR4oI8r_nxe5QI06TYlw9ifdg="
+        },
+        {
+            "name": "Algum serviço 4",
+            "description": "Alguma descrição",
+            "price": 5741,
+            "image": "https://media.istockphoto.com/id/501387734/pt/foto/dan%C3%A7ar-seus-amigos.jpg?s=612x612&w=0&k=20&c=aHB1gZ5Qm6Glsl0n4RGR4oI8r_nxe5QI06TYlw9ifdg="
+        },{
+            "name": "Algum serviço 5",
+            "description": "Alguma descrição",
+            "price": 9000,
+            "image": "https://media.istockphoto.com/id/501387734/pt/foto/dan%C3%A7ar-seus-amigos.jpg?s=612x612&w=0&k=20&c=aHB1gZ5Qm6Glsl0n4RGR4oI8r_nxe5QI06TYlw9ifdg="
+        }
+    ]
+}
